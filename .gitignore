@@ -23,3 +23,6 @@
 # Ignore secrets.yml file
 config/secrets.yml
 config/auth_details.yml
+
+#Ignore .env
+.env
