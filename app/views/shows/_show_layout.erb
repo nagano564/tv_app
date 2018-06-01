@@ -1,0 +1,10 @@
+<% show_array.each do |show| %>
+  <% puts show.inspect %>
+  <div class="tv-show">
+      <%= image_tag "http://image.tmdb.org/t/p/w185#{show["poster_path"]}" %>
+      <div class="show-content">
+          <h5><%= show["name"] %></h5>
+          <p><%= show["overview"] %></p>
+      </div>
+  </div>
+<% end %>
