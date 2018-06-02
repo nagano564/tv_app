@@ -15,4 +15,8 @@ class Movie
   attribute :backdrop_path, String
   attribute :overview, String
   attribute :origin_country, Array[String]
+  attribute :created_by, Array[Hash]
+  attribute :number_of_episodes, Integer
+  attribute :number_of_seasons, Integer
+  
 end

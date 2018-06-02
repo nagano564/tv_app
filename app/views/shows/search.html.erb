@@ -1,2 +1,9 @@
-<h1>Shows#search</h1>
-<p>Find me in app/views/shows/search.html.erb</p>
+<div class="row">
+  <div class="col-md-7">
+    <h1>Search Results</h1>
+
+    <div class="popular-shows">
+      <%= render partial: 'show_layout', locals: {show_array: @search_results} %>
+    </div>
+  </div>
+</div>

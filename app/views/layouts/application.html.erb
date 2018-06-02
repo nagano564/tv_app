@@ -25,10 +25,10 @@
               <a class="nav-link" href="#">Link</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            <%= form_tag shows_search_path, method: "get" do %>
+              <%= text_field_tag :query, nil, placeholder: "Search for a TV show...", required: "required" %>
+              <button class="btn my-2 my-sm-0" type="submit"><%= submit_tag "Search", id: "submit-search", name: nil %></button>
+            <% end %>
         </div>
       </nav>
       
