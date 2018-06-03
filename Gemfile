@@ -41,6 +41,7 @@ gem 'webmock'
 gem 'bootstrap', '~> 4.1.1'
 gem 'httparty', '~> 0.13.7'
 gem 'jquery-rails'
+gem 'awesome_print', '~> 1.8'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

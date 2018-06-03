@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/tv?api_key=fb6a1d3f38c3d97f67df6d141f936f29&language=en-US&query=Westworld
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=21600
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 03 Jun 2018 17:40:36 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '39'
+      X-Ratelimit-Reset:
+      - '1528047646'
+      Content-Length:
+      - '820'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"total_results":2,"total_pages":1,"results":[{"original_name":"Westworld","id":63247,"name":"Westworld","vote_count":1377,"vote_average":8.17,"poster_path":"\/6aj09UTMQNyfSfk0ZX8rYOEsXL2.jpg","first_air_date":"2016-10-02","popularity":194.870841,"genre_ids":[37,878],"original_language":"en","backdrop_path":"\/yp94aOXzuqcQHva90B3jxLfnOO9.jpg","overview":"A
+        dark odyssey about the dawn of artificial consciousness and the evolution
+        of sin. Set at the intersection of the near future and the reimagined past,
+        it explores a world in which every human appetite, no matter how noble or
+        depraved, can be indulged.","origin_country":["US"]},{"original_name":"Beyond
+        Westworld","id":411,"name":"Beyond Westworld","vote_count":0,"vote_average":0,"poster_path":"\/beRJ35TDn1f8tlqBkDasY0xWgUs.jpg","first_air_date":"1980-03-05","popularity":3.020669,"genre_ids":[10765],"original_language":"en","backdrop_path":"\/nRNoUuJLPjYSoEh2u51GVjFfAf6.jpg","overview":"Beyond
+        Westworld was a short-lived 1980 television series that carried on the stories
+        of the two feature films, Westworld and Futureworld. It featured Jim McMullan
+        as Security Chief John Moore of the Delos Corporation. The story revolved
+        around John Moore having to stop the evil scientist, Quaid, as he planned
+        to use the robots in Delos to try to take over the world. Despite being nominated
+        for two Emmys, only five episodes were produced, and only three of them were
+        aired before cancellation.","origin_country":["US"]}]}'
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 17:40:36 GMT
+recorded_with: VCR 4.0.0

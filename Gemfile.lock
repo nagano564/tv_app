@@ -43,6 +43,7 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (8.5.2)
       execjs
+    awesome_print (1.8.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -224,6 +225,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print (~> 1.8)
   bootstrap (~> 4.1.1)
   byebug
   coffee-rails (~> 4.2)
