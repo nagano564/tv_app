@@ -4,16 +4,23 @@ class ShowsController < ApplicationController
   end
 
   def search
-    redirect_to root_path and return if params[:query].nil? 
-      
-    response = MovieAPI.new.search(params[:query])
+    @search_results =[]
+    
+    if params[:query].nil?
+      @error_message = 'No TV show names provided'
+      render :search and return
+    end
 
-    if response['code'] == 200
-      @search_results = response['results'].map { |movie| Movie.new(movie) }
-      redirect_to shows_search_path
+    search_results = MovieAPI.new.search(params[:query])
+
+    if search_results['results'].empty?
+      @error_message = "No search results found for: #{params[:query]}"
+    elsif search_results['code'] == 500
+      @error_message = "Internal Server Error, Please try again"
+    elsif search_results['code'] == 200
+      @search_results = search_results['results'].map { |movie| Movie.new(movie) }
     else
-      flash[:alert] = "Search Failed Please Try again"
-      redirect_to root_path
+      @error_message = "Search Failed Please Try Again"
     end
   end
 
