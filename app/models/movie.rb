@@ -18,5 +18,6 @@ class Movie
   attribute :created_by, Array[Hash]
   attribute :number_of_episodes, Integer
   attribute :number_of_seasons, Integer
+  attribute :homepage, String
   
 end
