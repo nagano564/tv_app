@@ -1,11 +1,11 @@
 
 
-<div class="container">
+<div class="card">
   <%= image_tag "http://image.tmdb.org/t/p/w185#{@show["poster_path"]}" %>
 
   <h1><%= @show.name %></h1>
   <h3><%= link_to "Homepage", @show.homepage %></h3>
-  <p><%= @show.overview %><p>
+  <p class="text-justify"><%= @show.overview %><p>
 
   <ul>
     <li>First Air Date: <%= @show.first_air_date %></li>
