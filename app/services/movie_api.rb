@@ -10,7 +10,7 @@ class MovieAPI
   def get_popular_shows
     params = '&sort_by=popularity.desc'
     response = http_get('discover/tv', params)
-    response['results'].map { |movie| Movie.new(movie) }  
+    response['results'].map { |movie| Movie.new(movie) }
   end
 
   def search(query)
