@@ -3,7 +3,7 @@
     <%= image_tag "http://image.tmdb.org/t/p/w185#{show["poster_path"]}" %>
     <div class="show-content">
       <h5>
-        <%= link_to show["name"], shows_show_path(show["id"]) %>
+        <%= link_to show["name"], show_path(show["id"]) %>
       </h5>
       <p><%= show["overview"] %></p>
     </div>
