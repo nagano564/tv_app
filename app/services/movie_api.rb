@@ -14,7 +14,7 @@ class MovieAPI
   end
 
   def search(query)
-    response = http_get('search/tv', "&language=en-US&query=#{URI(query)}")
+    response = http_get('search/tv', "&language=en-US&query=#{URI.encode(query)}")
     response['code'] = response.code
     response
   end
