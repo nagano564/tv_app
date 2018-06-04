@@ -3,4 +3,27 @@
 div.card {
   background-color: silver;
   width: 20rem;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+h1.top {
+  text-align: center;
+  color: #5CB85C;
+}
+
+div.jumbotron {
+  margin-top: 10px;
+}
+
+p.intro {
+  font-weight: bold;
+}
+
+div.popular-shows.row {
+  margin-top: 20px;
+}
+
+a.nav-link.home {
+  margin-left: 10px;
 }
