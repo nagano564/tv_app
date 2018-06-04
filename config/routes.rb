@@ -1,5 +1,9 @@
 Rails.application.routes.draw do  
 
+  get 'index/search'
+
+  get 'index/show'
+
   root 'shows#index'
   get 'shows/about'
 
