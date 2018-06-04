@@ -1,7 +1,7 @@
 require 'httparty'
 require_relative '../models/movie'
 
-class MovieAPI
+class ShowAPI
   def initialize
     @api_key = ENV['MY_API_ENV']
     @api_base = 'https://api.themoviedb.org/3/'
