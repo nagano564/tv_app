@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="inline col-8">
+      <div class="card">
+        <%= image_tag "http://image.tmdb.org/t/p/w185#{@movie["poster_path"]}" %>
+
+        <h1><%= @movie.name %></h1>
+        <h3><%= link_to "Homepage", @movie.homepage %></h3>
+        <p class="text-justify"><%= @movie.overview %><p>
+      </div>
+    </div>
+  </div>
+</div>
+

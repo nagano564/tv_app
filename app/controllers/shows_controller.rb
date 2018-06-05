@@ -24,6 +24,7 @@ class ShowsController < ApplicationController
 
   def show
     @show = MovieAPI.new.get_show(params[:id])
+    @recommended_array = MovieAPI.new.get_recommended_tv(params[:id])
   end
   
 end

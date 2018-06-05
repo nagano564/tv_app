@@ -1,16 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="inline col-4">
+      <div class="card">
+      <h3>Featured Show</h3>
+        <%= image_tag "http://image.tmdb.org/t/p/w185#{@show["poster_path"]}" %>     
 
+        <h1><%= @show.name %></h1>
+        <h3><%= link_to "Homepage", @show.homepage %></h3>
+        <p class="text-justify"><%= @show.overview %><p>
+        <ul>
+          <li>First Air Date: <%= @show.first_air_date %></li>
+          <li>Created by: <%= @show["created_by"].map {|creator| creator["name"]}.join ", " %></>    
+          <li> Number of Seasons: <%= @show.number_of_seasons %></li>
+          <li> Number of Seasons: <%= @show.number_of_episodes %></li>
+        </ul>
+      </div>
+    </div>
 
-<div class="card">
-  <%= image_tag "http://image.tmdb.org/t/p/w185#{@show["poster_path"]}" %>
-
-  <h1><%= @show.name %></h1>
-  <h3><%= link_to "Homepage", @show.homepage %></h3>
-  <p class="text-justify"><%= @show.overview %><p>
-
-  <ul>
-    <li>First Air Date: <%= @show.first_air_date %></li>
-    <li>Created by: <%= @show["created_by"].map {|creator| creator["name"]}.join ", " %></li>    
-    <li> Number of Seasons: <%= @show.number_of_seasons %></li>
-    <li> Number of Seasons: <%= @show.number_of_episodes %></li>
-  </ul>
+    <div class="inline col-8 recommend">
+      <div class="container">
+        <h3 id="recommended">Recommended Shows</h3>
+        <div class="row">        
+          <div class="inline col-4">
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[0].poster_path}" %>
+            <h4><%= link_to @recommended_array[0].name, show_path(@recommended_array[0].id) %></h4>
+          </div>
+          <div class="inline col-4">        
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[1].poster_path}" %>
+            <h4><%= link_to @recommended_array[1].name, show_path(@recommended_array[1].id) %></h4>
+          </div>        
+          <div class="inline col-4">        
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[2].poster_path}" %>
+            <h4><%= link_to @recommended_array[2].name, show_path(@recommended_array[2].id) %></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

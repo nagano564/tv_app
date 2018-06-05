@@ -13,6 +13,12 @@ class MovieAPI
     response['results'].map { |movie| Movie.new(movie) }
   end
 
+  def get_recommended_tv(id)
+    params = '&language=en-US&page=1'
+    recommended = http_get("tv/#{id}/recommendations", params )
+    recommended['results'].map { |movie| Movie.new(movie) }
+  end
+
   def search(query)
     response = http_get('search/tv', "&language=en-US&query=#{URI.encode(query)}")
     response['code'] = response.code
@@ -25,6 +31,25 @@ class MovieAPI
     response['code'] = response.code
     Movie.new(response)
   end
+
+  def get_popular_movies
+    params = '&language=en-US&page=1'
+    response = http_get('movie/popular', params)
+    response['results'].map { |movie| Movie.new(movie) }
+  end
+
+  def get_movie(id)
+    response = http_get("movie/#{id}", '&language=en-US')
+    # TODO: need to switch to raising an exception instead
+    response['code'] = response.code
+    Movie.new(response) 
+  end
+
+  def get_recommended_movies(id)
+    
+  end
+
+
 
   private
 
