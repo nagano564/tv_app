@@ -13,6 +13,12 @@ class MovieAPI
     response['results'].map { |movie| Movie.new(movie) }
   end
 
+  def get_recommended_tv(id)
+    params = '&language=en-US&page=1'
+    recommended = http_get("tv/#{id}/recommendations", params )
+    recommended['results'].map { |movie| Movie.new(movie) }
+  end
+
   def search(query)
     response = http_get('search/tv', "&language=en-US&query=#{URI.encode(query)}")
     response['code'] = response.code
@@ -38,6 +44,12 @@ class MovieAPI
     response['code'] = response.code
     Movie.new(response) 
   end
+
+  def get_recommended_movies(id)
+    
+  end
+
+
 
   private
 
