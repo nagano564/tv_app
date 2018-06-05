@@ -26,6 +26,19 @@ class MovieAPI
     Movie.new(response)
   end
 
+  def get_popular_movies
+    params = '&language=en-US&page=1'
+    response = http_get('movie/popular', params)
+    response['results'].map { |movie| Movie.new(movie) }
+  end
+
+  def get_movie(id)
+    response = http_get("movie/#{id}", '&language=en-US')
+    # TODO: need to switch to raising an exception instead
+    response['code'] = response.code
+    Movie.new(response) 
+  end
+
   private
 
   def http_get(resource, query_params)

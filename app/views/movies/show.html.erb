@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="inline col-8">
+      <div class="card">
+        <%= image_tag "http://image.tmdb.org/t/p/w185#{@movie["poster_path"]}" %>
+
+        <h1><%= @movie.name %></h1>
+        <h3><%= link_to "Homepage", @movie.homepage %></h3>
+        <p class="text-justify"><%= @movie.overview %><p>
+
+        <ul>
+          <li>First Air Date: <%= @movie.first_air_date %></li>
+          <li>Created by: <%= @movie["created_by"].map {|creator| creator["name"]}.join ", " %></li>    
+          <li> Number of Seasons: <%= @movie.number_of_seasons %></li>
+          <li> Number of Seasons: <%= @movie.number_of_episodes %></li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="inline col-4">
+        <ul>
+          <li>First Air Date: <%= @movie.first_air_date %></li>
+          <li>Created by: <%= @movie["created_by"].map {|creator| creator["name"]}.join ", " %></li>    
+          <li> Number of Seasons: <%= @movie.number_of_seasons %></li>
+          <li> Number of Seasons: <%= @movie.number_of_episodes %></li>
+        </ul>
+      </div>
+      </div>
+</div>
+

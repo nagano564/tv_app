@@ -5,6 +5,7 @@ class Movie
 
   attribute :id, Integer
   attribute :original_name, String
+  attribute :original_title, String
   attribute :name, String
   attribute :popularity, Float
   attribute :vote_count, Integer
