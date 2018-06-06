@@ -1,0 +1,152 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/tv/1418/recommendations?api_key=fb6a1d3f38c3d97f67df6d141f936f29&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=28800
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 05 Jun 2018 22:19:39 GMT
+      Etag:
+      - W/"c4c8437349f7fc1263e1f1bcf9811a87"
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '22984'
+      X-Memc-Expires:
+      - '5816'
+      X-Memc-Key:
+      - 86e7a5ca306a57062775a27b02c93c43
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '39'
+      X-Ratelimit-Reset:
+      - '1528237189'
+      Content-Length:
+      - '5426'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[{"backdrop_path":"/wfe7Xf7tc0zmnkoNyN3xor0xR8m.jpg","first_air_date":"2005-09-19","genre_ids":[35],"id":1100,"name":"How
+        I Met Your Mother","origin_country":["US"],"original_language":"en","original_name":"How
+        I Met Your Mother","overview":"How I Met Your Mother is an American sitcom
+        that originally aired on CBS from September 19, 2005, to March 31, 2014. The
+        series follows the main character, Ted Mosby, and his group of friends in
+        Manhattan. As a framing device, Ted, in the year 2030, recounts to his son
+        and daughter the events that led to his meeting their mother.","poster_path":"/izncB6dCLV7LBQ5MsOPyMx9mUDa.jpg","vote_average":7.4,"vote_count":838,"networks":[{"id":16,"logo":{"path":"/nm8d7P7MJNiBLdgIzUK0gkuEA4r.png","aspect_ratio":3.282122905027933},"name":"CBS","origin_country":"US"}]},{"backdrop_path":"/efiX8iir6GEBWCD0uCFIi5NAyYA.jpg","first_air_date":"1994-09-22","genre_ids":[35],"id":1668,"name":"Friends","origin_country":["US"],"original_language":"en","original_name":"Friends","overview":"The
+        misadventures of a group of friends as they navigate the pitfalls of work,
+        life and love in Manhattan.","poster_path":"/7buCWBTpiPrCF5Lt023dSC60rgS.jpg","vote_average":7.8,"vote_count":1173,"networks":[{"id":6,"logo":{"path":"/o3OedEP0f9mfZr33jz2BfXOUK5.png","aspect_ratio":4.083582089552239},"name":"NBC","origin_country":"US"}]},{"backdrop_path":"/27cshLy9anL9G0g6tBQjWkPACx5.jpg","first_air_date":"2003-09-22","genre_ids":[35],"id":2691,"name":"Two
+        and a Half Men","origin_country":["US"],"original_language":"en","original_name":"Two
+        and a Half Men","overview":"A hedonistic jingle writer''s free-wheeling life
+        comes to an abrupt halt when his brother and 10-year-old nephew move into
+        his beach-front house.","poster_path":"/A9QDK4OWpv41W27kCv0LXe30k9S.jpg","vote_average":6.2,"vote_count":520,"networks":[{"id":16,"logo":{"path":"/nm8d7P7MJNiBLdgIzUK0gkuEA4r.png","aspect_ratio":3.282122905027933},"name":"CBS","origin_country":"US"}]},{"backdrop_path":"/snxFgPvHMcpW5f8Q3wu6uRRycww.jpg","first_air_date":"2009-09-23","genre_ids":[35],"id":1421,"name":"Modern
+        Family","origin_country":["US"],"original_language":"en","original_name":"Modern
+        Family","overview":"The Pritchett-Dunphy-Tucker clan is a wonderfully large
+        and blended family. They give us an honest and often hilarious look into the
+        sometimes warm, sometimes twisted, embrace of the modern family.","poster_path":"/gLAcu4VPCAb90oJvJ4nUJc5ZBQi.jpg","vote_average":7.3,"vote_count":665,"networks":[{"id":2,"logo":{"path":"/uuEOGcTrJ9xq8WSI2OGvGFpp9H.png","aspect_ratio":1.0},"name":"ABC","origin_country":"US"}]},{"backdrop_path":"/qvUxoJhfARTmHUmK9StpB7SViPg.jpg","first_air_date":"2004-11-16","genre_ids":[35,18,9648],"id":1408,"name":"House","origin_country":["US"],"original_language":"en","original_name":"House","overview":"Dr.
+        Gregory House, a drug-addicted, unconventional, misanthropic medical genius,
+        leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching
+        Hospital in New Jersey.","poster_path":"/lxSzRZ49NXwsiyHuvMsd19QxduC.jpg","vote_average":8.1,"vote_count":831,"networks":[{"id":19,"logo":{"path":"/1DSpHrWyOORkL9N2QHX7Adt31mQ.png","aspect_ratio":2.3255813953488373},"name":"FOX","origin_country":"US"}]},{"backdrop_path":"/5m05BIoMHgTd4zvJ5OBh7gZFGWV.jpg","first_air_date":"2006-10-01","genre_ids":[80,18,9648],"id":1405,"name":"Dexter","origin_country":["US"],"original_language":"en","original_name":"Dexter","overview":"Dexter
+        is an American television drama series. The series centers on Dexter Morgan,
+        a blood spatter pattern analyst for ''Miami Metro Police Department'' who
+        also leads a secret life as a serial killer, hunting down criminals who have
+        slipped through the cracks of justice.","poster_path":"/ydmfheI5cJ4NrgcupDEwk8I8y5q.jpg","vote_average":8.0,"vote_count":1050,"networks":[{"id":67,"logo":{"path":"/Allse9kbjiP6ExaQrnSpIhkurEi.png","aspect_ratio":2.42080378250591},"name":"Showtime","origin_country":"US"}]},{"backdrop_path":"/gn18IaampxKKRgxSrCJORhWi84J.jpg","first_air_date":"2001-10-02","genre_ids":[35,18],"id":4556,"name":"Scrubs","origin_country":["US"],"original_language":"en","original_name":"Scrubs","overview":"In
+        the unreal world of Sacred Heart Hospital, John \"J.D\" Dorian learns the
+        ways of medicine, friendship and life.","poster_path":"/x40NhjIPoDoTbT0z2utFgIedtwh.jpg","vote_average":7.7,"vote_count":470,"networks":[{"id":2,"logo":{"path":"/uuEOGcTrJ9xq8WSI2OGvGFpp9H.png","aspect_ratio":1.0},"name":"ABC","origin_country":"US"},{"id":6,"logo":{"path":"/o3OedEP0f9mfZr33jz2BfXOUK5.png","aspect_ratio":4.083582089552239},"name":"NBC","origin_country":"US"}]},{"backdrop_path":"/f5uNbUC76oowt5mt5J9QlqrIYQ6.jpg","first_air_date":"1989-12-17","genre_ids":[16,35],"id":456,"name":"The
+        Simpsons","origin_country":["US"],"original_language":"en","original_name":"The
+        Simpsons","overview":"Set in Springfield, the average American town, the show
+        focuses on the antics and everyday adventures of the Simpson family; Homer,
+        Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since
+        the beginning, the series has been a pop culture icon, attracting hundreds
+        of celebrities to guest star. The show has also made name for itself in its
+        fearless satirical take on politics, media and American life in general.","poster_path":"/yTZQkSsxUFJZJe67IenRM0AEklc.jpg","vote_average":7.1,"vote_count":1527,"networks":[{"id":19,"logo":{"path":"/1DSpHrWyOORkL9N2QHX7Adt31mQ.png","aspect_ratio":2.3255813953488373},"name":"FOX","origin_country":"US"}]},{"backdrop_path":"/pH38r4TWTqq7Mcs6XAlwgzNUeJe.jpg","first_air_date":"1999-01-31","genre_ids":[16,35],"id":1434,"name":"Family
+        Guy","origin_country":["US"],"original_language":"en","original_name":"Family
+        Guy","overview":"Sick, twisted, politically incorrect and Freakin'' Sweet
+        animated series featuring the adventures of the dysfunctional Griffin family.
+        Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant
+        but sadistic baby bent on killing his mother and taking over the world), Meg
+        (the oldest, and is the most unpopular girl in town) and Chris (the middle
+        kid, he''s not very bright but has a passion for movies). The final member
+        of the family is Brian - a talking dog and much more than a pet, he keeps
+        Stewie in check whilst sipping Martinis and sorting through his own life issues.","poster_path":"/gBGUL1UTUNmdRQT8gA1LUV4yg39.jpg","vote_average":6.5,"vote_count":1135,"networks":[{"id":19,"logo":{"path":"/1DSpHrWyOORkL9N2QHX7Adt31mQ.png","aspect_ratio":2.3255813953488373},"name":"FOX","origin_country":"US"},{"id":80,"logo":{"path":"/9AKyspxVzywuaMuZ1Bvilu8sXly.png","aspect_ratio":1.6597510373443984},"name":"Adult
+        Swim","origin_country":"US"}]},{"backdrop_path":"/mSDKNVvDfitFE6Fb6fSSl5DQmgS.jpg","first_air_date":"1997-08-13","genre_ids":[16,35],"id":2190,"name":"South
+        Park","origin_country":["US"],"original_language":"en","original_name":"South
+        Park","overview":"Follows the misadventures of four irreverent grade-schoolers
+        in the quiet, dysfunctional town of South Park, Colorado.","poster_path":"/v9zc0cZpy5aPSfAy6Tgb6I1zWgV.jpg","vote_average":7.7,"vote_count":842,"networks":[{"id":47,"logo":{"path":"/qVjSSahDTLg3tOcs5Qvy8JOhhey.png","aspect_ratio":4.7215189873417724},"name":"Comedy
+        Central","origin_country":"US"}]},{"backdrop_path":"/bvS50jBZXtglmLu72EAt5KgJBrL.jpg","first_air_date":"2010-07-25","genre_ids":[80,18,9648],"id":19885,"name":"Sherlock","origin_country":["GB"],"original_language":"en","original_name":"Sherlock","overview":"A
+        modern update finds the famous sleuth and his doctor partner solving crime
+        in 21st century London.","poster_path":"/f9zGxLHGyQB10cMDZNY5ZcGKhZi.jpg","vote_average":8.2,"vote_count":1302,"networks":[{"id":4,"logo":{"path":"/mVn7xESaTNmjBUyUtGNvDQd3CT1.png","aspect_ratio":4.975124378109452},"name":"BBC
+        One","origin_country":"GB"}]},{"backdrop_path":"/s2K9dFS8g90Fouv61NKa6uxPjAE.jpg","first_air_date":"2006-09-25","genre_ids":[18,10765],"id":1639,"name":"Heroes","origin_country":["US"],"original_language":"en","original_name":"Heroes","overview":"Common
+        people discover that they have super powers. Their lives intertwine as a devastating
+        event must be prevented.","poster_path":"/q7kIQi9x2Y6RxFqydH2tZBWyH2o.jpg","vote_average":6.9,"vote_count":564,"networks":[{"id":6,"logo":{"path":"/o3OedEP0f9mfZr33jz2BfXOUK5.png","aspect_ratio":4.083582089552239},"name":"NBC","origin_country":"US"}]},{"backdrop_path":"/qPxXFK7JNSrIFlaDXOjEEoeztD7.jpg","first_air_date":"1999-03-28","genre_ids":[16,35,18,10765],"id":615,"name":"Futurama","origin_country":["US"],"original_language":"en","original_name":"Futurama","overview":"The
+        adventures of a late-20th-century New York City pizza delivery boy, Philip
+        J. Fry, who, after being unwittingly cryogenically frozen for one thousand
+        years, finds employment at Planet Express, an interplanetary delivery company
+        in the retro-futuristic 31st century.","poster_path":"/iN0LOeE2JnJpIy4jF7imUjO6jwn.jpg","vote_average":8.1,"vote_count":644,"networks":[{"id":19,"logo":{"path":"/1DSpHrWyOORkL9N2QHX7Adt31mQ.png","aspect_ratio":2.3255813953488373},"name":"FOX","origin_country":"US"},{"id":47,"logo":{"path":"/qVjSSahDTLg3tOcs5Qvy8JOhhey.png","aspect_ratio":4.7215189873417724},"name":"Comedy
+        Central","origin_country":"US"}]},{"backdrop_path":"/pRPJj3oczSIxo8L80qNweXaWnrp.jpg","first_air_date":"2004-09-22","genre_ids":[18,9648,10759],"id":4607,"name":"Lost","origin_country":["US"],"original_language":"en","original_name":"Lost","overview":"Stripped
+        of everything, the survivors of a horrific plane crash  must work together
+        to stay alive. But the island holds many secrets.","poster_path":"/jyGspygDXJMydTOJj7iWNx9Elyd.jpg","vote_average":7.8,"vote_count":980,"networks":[{"id":2,"logo":{"path":"/uuEOGcTrJ9xq8WSI2OGvGFpp9H.png","aspect_ratio":1.0},"name":"ABC","origin_country":"US"}]},{"backdrop_path":"/bzoZjhbpriBT2N5kwgK0weUfVOX.jpg","first_air_date":"2008-01-19","genre_ids":[18],"id":1396,"name":"Breaking
+        Bad","origin_country":["US"],"original_language":"en","original_name":"Breaking
+        Bad","overview":"When Walter White, a New Mexico chemistry teacher, is diagnosed
+        with Stage III cancer and given a prognosis of only two years left to live,
+        he becomes filled with a sense of fearlessness and an unrelenting desire to
+        secure his family''s financial future at any cost as he enters the dangerous
+        world of drugs and crime.","poster_path":"/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg","vote_average":8.3,"vote_count":2622,"networks":[{"id":174,"logo":{"path":"/pmvRmATOCaDykE6JrVoeYxlFHw3.png","aspect_ratio":1.768},"name":"AMC","origin_country":"US"}]},{"backdrop_path":"/3RognQsjLyE50cy5VMo28auGe9q.jpg","first_air_date":"2013-02-01","genre_ids":[18],"id":1425,"name":"House
+        of Cards","origin_country":["US"],"original_language":"en","original_name":"House
+        of Cards","overview":"Set in present day Washington, D.C., House of Cards
+        is the story of Frank Underwood, a ruthless and cunning politician, and his
+        wife Claire who will stop at nothing to conquer everything. This wicked political
+        drama penetrates the shadowy world of greed, sex and corruption in modern
+        D.C. \n\nHouse of Cards is an adaptation of a previous BBC miniseries of the
+        same name, which is based on the novel by Michael Dobbs.","poster_path":"/6AquMx9MoJZTaZIR2AokSDATFCt.jpg","vote_average":8.1,"vote_count":904,"networks":[{"id":213,"logo":{"path":"/wwemzKWzjKYJFfCeiB57q3r4Bcm.png","aspect_ratio":3.7313432835820897},"name":"Netflix","origin_country":""}]},{"backdrop_path":"/8JH8s4WKKSxGxtJvWbQAdaEjv9q.jpg","first_air_date":"1989-07-05","genre_ids":[35],"id":1400,"name":"Seinfeld","origin_country":["US"],"original_language":"en","original_name":"Seinfeld","overview":"Seinfeld
+        is an American television sitcom that originally aired on NBC from July 5,
+        1989, to May 14, 1998. It lasted nine seasons, and is now in syndication.
+        It was created by Larry David and Jerry Seinfeld, the latter starring as a
+        fictionalized version of himself. Set predominantly in an apartment block
+        in Manhattan''s Upper West Side in New York City, the show features a handful
+        of Jerry''s friends and acquaintances, particularly best friend George Costanza,
+        former girlfriend Elaine Benes, and neighbor across the hall Cosmo Kramer.","poster_path":"/u3mFyqIprL5ou8Ue04Ecac6iDi7.jpg","vote_average":8.2,"vote_count":509,"networks":[{"id":6,"logo":{"path":"/o3OedEP0f9mfZr33jz2BfXOUK5.png","aspect_ratio":4.083582089552239},"name":"NBC","origin_country":"US"}]},{"backdrop_path":"/dpNeXLEnuKzAvbNwveJhNEiQvXZ.jpg","first_air_date":"2015-04-10","genre_ids":[28,80],"id":61889,"name":"Marvel''s
+        Daredevil","origin_country":["US"],"original_language":"en","original_name":"Marvel''s
+        Daredevil","overview":"Lawyer-by-day Matt Murdock uses his heightened senses
+        from being blinded as a young boy to fight crime at night on the streets of
+        Hell’s Kitchen as Daredevil.","poster_path":"/cidOqJL8tayqvv3TpfTQCsgeITu.jpg","vote_average":7.7,"vote_count":1073,"networks":[{"id":213,"logo":{"path":"/wwemzKWzjKYJFfCeiB57q3r4Bcm.png","aspect_ratio":3.7313432835820897},"name":"Netflix","origin_country":""}]},{"backdrop_path":"/92OPBZpLc82y8CzOtrQ8P9RDvIN.jpg","first_air_date":"2005-08-29","genre_ids":[80,18,10759],"id":2288,"name":"Prison
+        Break","origin_country":["US"],"original_language":"en","original_name":"Prison
+        Break","overview":"Due to a political conspiracy, an innocent man is sent
+        to death row and his only hope is his brother, who makes it his mission to
+        deliberately get himself sent to the same prison in order to break the both
+        of them out, from the inside out.","poster_path":"/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg","vote_average":7.5,"vote_count":898,"networks":[{"id":19,"logo":{"path":"/1DSpHrWyOORkL9N2QHX7Adt31mQ.png","aspect_ratio":2.3255813953488373},"name":"FOX","origin_country":"US"}]},{"backdrop_path":"/3uMrWrNJgQn8N5aq29nlrkE6wX7.jpg","first_air_date":"2006-02-03","genre_ids":[35],"id":2490,"name":"The
+        IT Crowd","origin_country":["GB"],"original_language":"en","original_name":"The
+        IT Crowd","overview":"UK Comedy series about two I.T. nerds and their clueless
+        female manager, who work in the basement of a very successful company. When
+        they are called on for help, they are never treated with any respect at all.","poster_path":"/2g0yrwH3wWfGfA6uXUPhtiQZYOx.jpg","vote_average":8.1,"vote_count":353,"networks":[{"id":26,"logo":{"path":"/hbifXPpM55B1fL5wPo7t72vzN78.png","aspect_ratio":0.7238372093023255},"name":"Channel
+        4","origin_country":"GB"}]}],"total_pages":1,"total_results":20}'
+    http_version: 
+  recorded_at: Tue, 05 Jun 2018 22:20:29 GMT
+recorded_with: VCR 4.0.0
