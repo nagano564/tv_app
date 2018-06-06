@@ -1,12 +1,32 @@
 <div class="container">
   <div class="row">
-    <div class="inline col-8">
+    <div class="inline col-4">
       <div class="card">
+      <h3>Featured Movie</h3>
         <%= image_tag "http://image.tmdb.org/t/p/w185#{@movie["poster_path"]}" %>
 
         <h1><%= @movie.name %></h1>
         <h3><%= link_to "Homepage", @movie.homepage %></h3>
         <p class="text-justify"><%= @movie.overview %><p>
+      </div>
+    </div>
+    <div class="inline col-8 recommend">
+      <div class="container">
+        <h3 id="recommended">Recommended Movies</h3>
+        <div class="row">        
+          <div class="inline col-4">
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[0].poster_path}" %>
+            <h4 class="title"><%= link_to @recommended_array[0].original_title, movie_path(@recommended_array[0].id) %></h4>
+          </div>
+          <div class="inline col-4">        
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[1].poster_path}" %>
+            <h4 class="title"><%= link_to @recommended_array[1].original_title, movie_path(@recommended_array[1].id) %></h4>
+          </div>        
+          <div class="inline col-4">        
+            <%= image_tag "http://image.tmdb.org/t/p/w185#{@recommended_array[2].poster_path}" %>
+            <h4 class="title"><%= link_to @recommended_array[2].original_title, movie_path(@recommended_array[2].id) %></h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
