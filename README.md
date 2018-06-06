@@ -4,7 +4,7 @@ Ken's TV App is a Ruby on Rails app powered by bootstrap. This web app is a chal
 
 ### Functional Requirements
 
-**1.**  When first loaded, there should be a list of  [popular TV shows](https://developers.themoviedb.org/3/discover/tv-discover)and a search bar.  
+**1.**  When first loaded, there should be a list of  [popular TV shows](https://developers.themoviedb.org/3/discover/tv-discover) and a search bar.  
 **2.**  Upon  [searching](https://developers.themoviedb.org/3/search/search-tv-shows)  for a TV show in the search bar, the user should see a list of shows whose title matches the search.  
 **3.**  After clicking on a  [TV show](https://developers.themoviedb.org/3/tv), the user should be taken to a page with more information about that particular TV show.
 
@@ -22,7 +22,7 @@ Ken's TV App is a Ruby on Rails app powered by bootstrap. This web app is a chal
 
 This project was built using Ruby, version 2.4.0, along with Rails, version 5.1.5. For Ruby installation or update, please see the following documentation: https://github.com/postmodern/ruby-install. For Rails installation, please follow this guide: http://installrails.com. For Rails update, please see: http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html.
 
-There are many reasons that I chose ruby on rails. The first one is the MVC design pattern of rails. commonly used for developing software that divides an application into three interconnected parts. This is done to separate internal representations of information from the ways information is presented to and accepted from the user. The MVC design pattern decouples these major components allowing for efficient code reuse and parallel development. Even though the model didn't interact with a database it still made sense to me to use this framework. Instead of an Active Record table we used the data from the response of the API endpoints. I created a model class to access the information in an array as I would with an Active Record query.
+There are many reasons that I chose ruby on rails. The first one is the Model-View-Controller design pattern of rails. MVC is commonly used for developing software that divides an application into three interconnected parts. This is done to separate internal representations of information from the ways information is presented to and accepted from the user. The MVC design pattern decouples these major components allowing for efficient code reuse and parallel development. Even though the model didn't interact with a database it still made sense to me to use this framework. Instead of an Active Record table we used the data from the response of the API endpoints. I created a model class to access the information in an array as I would with an Active Record query.
 
 HTTParty is a rails gem that simplifies an API request.  It includes the CLI executable command `httparty` which can be used to query web services and examine the resulting output. By default it will output the response as a pretty-printed Ruby object (useful for grokking the structure of output). https://github.com/jnunemaker/httparty
 
