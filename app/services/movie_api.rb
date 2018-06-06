@@ -51,8 +51,6 @@ class MovieAPI
     recommended['results'].map { |movie| Movie.new(movie) }
   end
 
-
-
   private
 
   def http_get(resource, query_params)

@@ -9,7 +9,6 @@ RSpec.describe MovieAPI do
   describe 'get_popular_shows' do
     it "fetches popular shows api", :vcr do 
       response = client.get_popular_shows
-      
       expect(response.class).to eq(Array)
       expect(response.length).to eq(20)
       expect(response.first['name']).to eq("The Big Bang Theory")
@@ -34,10 +33,8 @@ RSpec.describe MovieAPI do
 
     it "raises an error when nothing is in the query", :vcr do
       response = client.search("")
-
       expect(response["errors"][0]).to eq("query must be provided")
     end
-
   end
 
   describe 'get_show' do
