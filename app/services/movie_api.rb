@@ -46,7 +46,9 @@ class MovieAPI
   end
 
   def get_recommended_movies(id)
-    
+    params = '&language=en-US&page=1'
+    recommended = http_get("movie/#{id}/recommendations", params )
+    recommended['results'].map { |movie| Movie.new(movie) }
   end
 
 
