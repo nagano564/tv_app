@@ -1,11 +1,10 @@
 <% show_array.each do |show| %>
-  <div class="tv-show col-md-4">
-    <%= image_tag "http://image.tmdb.org/t/p/w185#{show["poster_path"]}" %>
+  <div class="tv-show col-md-4 card">
+    <%= image_tag "http://image.tmdb.org/t/p/w200#{show["poster_path"]}" %>
     <div class="show-content">
-      <h5>
+      <h5 class="title">
         <%= link_to show["original_title"], movie_path(show["id"]) %>
       </h5>
-      <p><%= show["overview"] %></p>
     </div>
   </div>
 <% end %>
