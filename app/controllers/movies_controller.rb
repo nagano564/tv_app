@@ -8,7 +8,6 @@ class MoviesController < ApplicationController
 
   def show
     @movie = MovieAPI.new.get_movie(params[:id]) 
-    @recommended_array = MovieAPI.new.get_recommended_movies(params[:id])
-    @recommended_array = @recommended_array.first(3)   
+    @recommended_array = MovieAPI.new.get_recommended_movies(params[:id]).first(3)
   end
 end
