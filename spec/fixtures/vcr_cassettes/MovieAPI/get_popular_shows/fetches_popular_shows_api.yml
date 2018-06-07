@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/discover/tv?api_key=fb6a1d3f38c3d97f67df6d141f936f29&sort_by=popularity.desc
+    uri: https://api.themoviedb.org/3/discover/tv?api_key=some_secret_key&sort_by=popularity.desc
     body:
       encoding: US-ASCII
       string: ''
