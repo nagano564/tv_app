@@ -13,19 +13,16 @@
     <div class="inline col-8 recommend">
       <div class="container">
         <h3 id="recommended">Recommended Movies</h3>
-        <div class="row">        
-          <div class="inline col-4">
-            <%= image_tag image_with_size(200, @recommended_array[0].poster_path) %>
-            <h4 class="title"><%= link_to @recommended_array[0].original_title, movie_path(@recommended_array[0].id) %></h4>
-          </div>
-          <div class="inline col-4">        
-            <%= image_tag image_with_size(200, @recommended_array[1].poster_path) %>
-            <h4 class="title"><%= link_to @recommended_array[1].original_title, movie_path(@recommended_array[1].id) %></h4>
-          </div>        
-          <div class="inline col-4">        
-            <%= image_tag image_with_size(200, @recommended_array[2].poster_path) %>
-            <h4 class="title"><%= link_to @recommended_array[2].original_title, movie_path(@recommended_array[2].id) %></h4>
-          </div>
+        <div class="row">
+          <% @recommended_array.each do |movie| %>              
+            <div class="inline col-4">
+              <%= image_tag image_with_size(185, movie.poster_path) %>
+              <h4 class="title"><%= link_to movie.original_title, movie_path(movie.id) %></h4>
+            </div>
+          <% end %>    
+          <% if @recommended_array.empty? %>
+            <h3> No Recommended Movies associated with this movie</h3>
+          <% end %>
         </div>
       </div>
     </div>
